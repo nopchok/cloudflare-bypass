@@ -7,7 +7,7 @@ require_once 'libraries/cloudflareClass.php';
 $httpProxy   = new httpProxy();
 $httpProxyUA = 'proxyFactory';
 
-$requestLink = 'https://www.totalcorner.com/match/today'; //'https://coinkite.com/';
+$requestLink = 'https://coinkite.com/';
 $requestPage = json_decode($httpProxy->performRequest($requestLink));
 
 // if page is protected by cloudflare
